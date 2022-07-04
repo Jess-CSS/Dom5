@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>Trabalho 2</title>
+</head>
+<body onload="CriarBox()">
+    <div id="config">
+        <div class="edit">
+            Largura<input id="iptLargura" oninput="alterarLargura()" type="range" min="0" max="200" value="100">
+            <label id="lblLargura"></label><br>
+            Altura<input id="iptAltura" oninput="alterarAltura()" type="range" min="0" max="200" value="100">
+            <label id="lblAltura"></label><br>
+        </div>
+        <div class="edit">
+            Topo<input type="range" id="iptTopo" oninput="distanciaT()" min="0" max="200" value="0">
+            <label id="lblTopo"></label><br>
+            Esquerda<input type="range" id="iptEsquerda" oninput="distanciaE()" min="0" max="200" value="0">
+            <label id="lblEsquerda"></label><br>
+        </div>
+        <div class="edit">
+            vermelho<input type="range" min="0" max="255" value="121" id="iptR" oninput="Cor()">
+            <label id="lblR"></label><br>
+
+            verde<input type="range" min="0" max="255" value="0" id="iptG" oninput="Cor()">
+            <label id="lblG"></label><br>
+
+            azul<input type="range" min="0" max="255" value="255" id="iptB" oninput="Cor()">
+            <label id="lblB"></label><br><br>
+        </div>
+    </div>
+    <br><br>
+    <div id="box"></div>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
